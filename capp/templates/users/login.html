@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<body>
+    <section class="section_login">
+        <div class="form-box">
+            <div class="form-value">
+                <form method="POST" action="">
+                    <h2>LOGIN</h2>
+                    {{form.hidden_tag()}}
+                    <fieldset class="form-group">
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            {{form.email.label(class="form-control-label")}}
+                            {{form.email(class="form-control form-control-lg")}}
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            {{form.email.label(class="form-control-label")}}
+                            {{form.email(class="form-control form-control-lg")}}
+                        </div>
+                        <div class="forget">
+                            {{form.remember.label(class="form-check-label")}}
+                            {{form.remember(class="form-check-input")}}
+                        </div>
+                    </fieldset>
+                        <button class="btn_info">Log In</button>
+                        <div class="register">
+                            <p>Don't have an account? <a href="{{url_for('users.register')}}">Register</a></p>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+{% endblock content %}

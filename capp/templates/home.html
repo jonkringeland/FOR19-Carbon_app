@@ -1,0 +1,145 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!-- Header -->
+<section class="section_header_home">
+  <div class="container">
+    <div class="header_home">
+      <div class="box"> 
+        <h1 style="font-size:55px;"><span class="text-logo"> Home</span></h1>
+        <p style="text-align:left;">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat dolores quos asperiores repellendus facilis cum illo aperiam odit doloremque nostrum. Totam excepturi labore voluptatibus iusto sapiente quisquam consectetur optio magnam voluptates omnis vel officia alias distinctio quas laborum reiciendis ratione inventore veniam, cupiditate doloribus dolore, eius natus a. Magni inventore consequuntur voluptas reprehenderit perferendis! Molestias aspernatur rem autem aut temporibus.
+        </p>
+        <div class="container_buttons_links_header_home">
+          <div class="btn">
+              <a href="{{url_for('users.register')}}", class="btn_info">Register</a>
+          </div>
+          <div class="btn">
+              <a href="{{url_for('users.login')}}", class="btn_info">Log in</a>
+          </div>
+          <div class="btn">
+            <a href="#", class="btn_info", data-toggle="modal" data-target="#carbon_app_instructions">Random info</a>
+          </div>
+        </div>  
+        <!-- Modal instructions -->
+        <div class="modal fade" id="carbon_app_instructions" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title", style="color:black; text-align: center;">Carbon App, instructions</h5>
+              </div>
+      
+              <div class="modal-body", style="color:black">
+                <p style="text-align: left;">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae ratione tempore id esse nobis molestias quasi explicabo possimus ea reprehenderit.
+                </p>
+                <ol style="text-align:left;">
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sint.
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sint.
+                  </li>
+                </ol>
+              </div>
+        
+              <div class="modal-footer">
+                <button class="btn btn-secondary btn-lg mr-2", style="background-color:#6c757d;" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <img 
+          src="{{url_for('static', filename='icons/carbon_app.svg')}}"
+          width="325" 
+          height="325"
+          alt=""/>
+      </div>
+    </div>
+  </div>
+</section> 
+<!-- Developers -->
+<section class="section_developers">
+  <div class="container">
+    <br>
+    <br>
+    <div class="developers" style="display:block;">
+      <h1 style="text-align:center;"> Our Team</h1>
+      <p>
+        Our team of economists and developers ... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, ut? Praesentium quidem sunt perspiciatis doloremque fugiat nesciunt quaerat ullam, pariatur iure unde ratione ipsum adipisci repellendus, repudiandae hic sit, temporibus molestias corrupti aut soluta sequi! Architecto deleniti expedita nisi repudiandae enim eum quas odit facilis placeat neque porro, animi incidunt consectetur. Maiores ab saepe tempora, iure asperiores beatae suscipit cum ipsum, rerum doloremque reprehenderit dolorum debitis, aliquam quasi. Maiores corporis fuga quasi nesciunt dolor iste, inventore necessitatibus unde!
+      </p>      
+    </div>
+
+    <div class="developers">
+        <div class="box">
+          <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="" style="border-radius: 50%; width:200px;">
+          <h3>Jon</h3>
+          <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia repellat omnis? Odit enim hic atque dolorem iste natus inventore perspiciatis vitae dolore animi veritatis aut nemo unde similique, officia reiciendis ex architecto voluptates soluta ab tempore facilis quisquam cum.
+          </p>
+          <div class="section_container_buttons_developers">
+            <a class="btn_developers" href="#"  target="_blank">Curriculum</a>
+            <a class="btn_developers" href="#" target="_blank">GitHub</a>
+          </div> 
+        </div>
+        <div class="box">
+          <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="" style="border-radius: 50%; width:200px;">
+          <h3>Rickard</h3>
+          <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia repellat omnis? Odit enim hic atque dolorem iste natus inventore perspiciatis vitae dolore animi veritatis aut nemo unde similique, officia reiciendis ex architecto voluptates soluta ab tempore facilis quisquam cum.
+          </p>
+          <div class="section_container_buttons_developers">
+            <a class="btn_developers" href="#"  target="_blank">Curriculum</a>
+            <a class="btn_developers" href="#" target="_blank">GitHub</a>
+          </div> 
+        </div>           
+        <div class="box">
+          <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="" style="border-radius: 50%; width:200px;">
+          <h3>Christian</h3>
+          <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia repellat omnis? Odit enim hic atque dolorem iste natus inventore perspiciatis vitae dolore animi veritatis aut nemo unde similique, officia reiciendis ex architecto voluptates soluta ab tempore facilis quisquam cum.
+          </p>
+          <div class="section_container_buttons_developers">
+            <a class="btn_developers" href="#"  target="_blank">Curriculum</a>
+            <a class="btn_developers" href="#" target="_blank">GitHub</a>
+          </div> 
+        </div>     
+    </div>
+
+    <div class="developers">
+      <div class="box">
+        <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="" style="border-radius: 50%; width:200px;">
+        <h3>Per Ole</h3>
+        <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia repellat omnis? Odit enim hic atque dolorem iste natus inventore perspiciatis vitae dolore animi veritatis aut nemo unde similique, officia reiciendis ex architecto voluptates soluta ab tempore facilis quisquam cum.
+        </p>
+        <div class="section_container_buttons_developers">
+          <a class="btn_developers" href="#"  target="_blank">Curriculum</a>
+          <a class="btn_developers" href="#" target="_blank">GitHub</a>
+        </div> 
+      </div>
+      <div class="box">
+        <img src="https://randomuser.me/api/portraits/women/13.jpg" alt="" style="border-radius: 50%; width:200px;">
+        <h3>Sara</h3>
+        <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia repellat omnis? Odit enim hic atque dolorem iste natus inventore perspiciatis vitae dolore animi veritatis aut nemo unde similique, officia reiciendis ex architecto voluptates soluta ab tempore facilis quisquam cum.
+        </p>
+        <div class="section_container_buttons_developers">
+          <a class="btn_developers" href="#"  target="_blank">Curriculum</a>
+          <a class="btn_developers" href="#" target="_blank">GitHub</a>
+        </div> 
+      </div>           
+      <div class="box">
+        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="" style="border-radius: 50%; width:200px;">
+        <h3>Martin</h3>
+        <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quia repellat omnis? Odit enim hic atque dolorem iste natus inventore perspiciatis vitae dolore animi veritatis aut nemo unde similique, officia reiciendis ex architecto voluptates soluta ab tempore facilis quisquam cum.
+        </p>
+        <div class="section_container_buttons_developers">
+          <a class="btn_developers" href="#"  target="_blank">Curriculum</a>
+          <a class="btn_developers" href="#" target="_blank">GitHub</a>
+        </div> 
+      </div>
+      </div>     
+  </div>
+
+  </div>          
+</section>
+        
+{% endblock content %}
