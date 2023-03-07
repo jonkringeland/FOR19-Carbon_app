@@ -3,7 +3,7 @@ import os
 
 application = Flask(__name__)
 
-application.config['SECRET_KEY'] = os.environ['SECRET_KEY']
+#application.config['SECRET_KEY'] = os.environ['SECRET_KEY']
 
 application.config['SECRET_KEY'] = '80981b81d7c7cdc17815c28b24f29a859f1e1abd62e4b90f'
 
