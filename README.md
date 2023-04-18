@@ -1,6 +1,6 @@
 # FOR19-Carbon_app
 
-### Tuesday 18th april, 2023
+###How to make and activate the virtual environment
 
 python3 -m venv venv #creats the venv folder
 Source venv/bin/activate #runs a bash script that activates the venv
